@@ -2,7 +2,7 @@
 So we use a special function that does that for us.*/
 async function start() {
 	try {
-		await require('./djbsf_library/index').lib("./configs.json"); //Import library
+		await require('./djbsf_library/index').lib("../configs.json"); //Import library
 
 		/*When requested, commands get output trough here*/
 		mail_man.on('view_slash', async (client) => {});
