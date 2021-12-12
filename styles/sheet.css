@@ -69,10 +69,10 @@
 	padding: 1%;
 	overflow: auto;
 	border-radius: 0 0 0 50px;
-	border-width: 10px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(255, 225, 255, 0.9);
+	border-width: 0px;
+
+	background-color: rgba(255, 225, 255, 0.1);
+	backdrop-filter: blur(8px);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -143,10 +143,11 @@ code {
 
 /*Link*/
 a {
-	background-color: rgba(255, 225, 255, 0.5);
+	background-color: rgba(255, 225, 255, 0.1);
+	backdrop-filter: blur(8px);
 	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 51%);
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	padding-left: 1%;
 	padding-right: 1%;
 	border-radius: 0 50px 0 50px;
@@ -154,7 +155,8 @@ a {
 
 a:hover,
 a:focus {
-	background-color: rgba(0, 255, 0, 0.5);
+	background-color: rgba(0, 255, 0, 0.1);
+	backdrop-filter: blur(8px);
 	text-decoration: overline;
 }
 
@@ -182,42 +184,42 @@ li:focus {
 h1 {
 	font-size: 50px;
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	text-align: right;
 }
 
 h2 {
 	font-size: 30px;
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	text-align: right;
 }
 
 h3 {
 	font-size: 25px;
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	text-align: right;
 }
 
 h4 {
 	font-size: 20px;
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	text-align: right;
 }
 
 h5 {
 	font-size: 15px;
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	text-align: right;
 }
 
 h6 {
 	font-size: 10px;
 	text-decoration: underline;
-	text-decoration-style: groove;
+	text-decoration-style: outset;
 	text-align: right;
 }
 
@@ -243,11 +245,9 @@ button {
 	width: auto;
 	text-align: right;
 	border-radius: 0 50px 0 50px;
-	border-width: 5px;
+	border-width: 0px;
 	padding-right: 3%;
 	padding-left: 5%;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
 	background-color: rgba(255, 225, 255, 0.5);
 	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 51%);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
@@ -258,9 +258,7 @@ button:focus {
 	height: 50px;
 	width: auto;
 	border-radius: 0 50px 0 50px;
-	border-width: 5px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
+	border-width: 0px;
 	background-color: rgba(0, 255, 0, 0.5);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -272,10 +270,9 @@ button:focus {
 	text-align: right;
 	padding-right: 5%;
 	border-radius: 0 50px 0 50px;
-	border-width: 10px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(255, 225, 255, 0.8);
+	border-width: 0px;
+	background-color: rgba(255, 225, 255, 0.1);
+	backdrop-filter: blur(8px);
 	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 51%);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -285,10 +282,9 @@ button:focus {
 	width: 100%;
 	margin: 1%;
 	border-radius: 0 50px 0 50px;
-	border-width: 10px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(0, 255, 0, 0.8);
+	border-width: 0px;
+	background-color: rgba(0, 255, 0, 0.1);
+	backdrop-filter: blur(8px);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -297,10 +293,9 @@ button:focus {
 	width: 100%;
 	margin: 1%;
 	border-radius: 0 50px 0 50px;
-	border-width: 10px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(255, 255, 0, 0.8);
+	border-width: 0px;
+	background-color: rgba(255, 255, 0, 0.1);
+	backdrop-filter: blur(8px);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -310,12 +305,11 @@ button:focus {
 	width: auto;
 	text-align: right;
 	border-radius: 0 50px 0 50px;
-	border-width: 5px;
+	border-width: 0px;
 	padding-right: 3%;
 	padding-left: 5%;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(255, 225, 255, 0.5);
+	background-color: rgba(255, 225, 255, 0.1);
+	backdrop-filter: blur(8px);
 	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 51%);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -325,10 +319,9 @@ button:focus {
 	height: 50px;
 	width: auto;
 	border-radius: 0 50px 0 50px;
-	border-width: 5px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(0, 255, 0, 0.5);
+	border-width: 0px;
+	background-color: rgba(0, 255, 0, 0.1);
+	backdrop-filter: blur(8px);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -337,15 +330,13 @@ button:focus {
 	width: auto;
 	text-align: right;
 	border-radius: 0 50px 0 50px;
-	border-width: 5px;
+	border-width: 0px;
 	padding-right: 3%;
 	padding-left: 3%;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(255, 225, 255, 0.5);
+	background-color: rgba(255, 225, 255, 0.1);
+	backdrop-filter: blur(8px);
 	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 51%);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
-	color: rgba(0, 0, 0, 1);
 	font-size: 14px;
 	font-family: monospace;
 }
@@ -355,12 +346,10 @@ button:focus {
 	height: 25px;
 	width: auto;
 	border-radius: 0 50px 0 50px;
-	border-width: 5px;
-	border-style: groove;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: rgba(0, 255, 0, 0.5);
+	border-width: 0px;
+	background-color: rgba(0, 255, 0, 0.1);
+	backdrop-filter: blur(8px);
 	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
-	color: white;
 	font-size: 14px;
 	font-family: monospace;
 }
@@ -437,10 +426,10 @@ button:focus {
 
 /*GLOBAL*/
 * {
-	color: rgba(0, 0, 0, 1);
+	color: rgba(224, 255, 224, 0.9);
 	scroll-behavior: smooth;
 	font-size: 20px;
 	font-family: 'Cinzel-Regular';
-	text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 	transition: 500ms;
 }
