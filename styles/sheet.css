@@ -124,6 +124,12 @@ code {
 	background-color: rgba(51, 51, 51, 0.8);
 }
 
+p {
+	padding: 1%;
+	background-color: rgba(51, 51, 51, 0.4);
+	box-shadow: 12px 0 15px -4px rgba(51, 51, 51, 0.4), -12px 0 8px -4px rgba(51, 51, 51, 0.4);
+}
+
 .top {
 	position: fixed;
 	width: 400px;
