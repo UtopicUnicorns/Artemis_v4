@@ -62,33 +62,21 @@
 	height: 75%;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-	.content {
-		width: 60%;
-		height: 75%;
-		margin: 1%;
-		padding: 1%;
-		overflow: auto;
-		border-radius: 0 0 0 50px;
-		border-width: 0px;
-		backdrop-filter: blur(8px);
-		-webkit-backdrop-filter: blur(8px);
-		box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
-	}
+.content {
+	width: 60%;
+	height: 75%;
+	margin: 1%;
+	overflow: auto;
+	border-radius: 0 0 0 50px;
+	border-width: 0px;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 	.content {
-		width: 60%;
-		height: 75%;
-		margin: 1%;
-		padding: 1%;
-		overflow: auto;
-		border-radius: 0 0 0 50px;
-		border-width: 0px;
 		background-color: rgba(255, 255, 255, 0.5);
-		box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
 	}
 }
 
@@ -570,6 +558,20 @@ h6:focus {
 		opacity: 1;
 		filter: blur(1);
 		opacity: 1;
+	}
+}
+
+@keyframes logo_2 {
+	0% {
+		filter: blur(0px);
+	}
+
+	50% {
+		filter: blur(2px);
+	}
+
+	100% {
+		filter: blur(0px);
 	}
 }
 
