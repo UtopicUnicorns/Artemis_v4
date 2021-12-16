@@ -15,10 +15,7 @@ function page(dec) {
 		content_grab.style.animation = '';
 	}, 2000);
 
-	let page1 = `
-
-	<br />
-	<br />`;
+	let page1 = `<img src="./images/logo.svg" width="100%">`;
 
 	let page2 = `<h1>Command list</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu elementum tellus. Aenean venenatis pretium ante. Donec porttitor augue metus, vel suscipit elit faucibus ac. Etiam condimentum felis id eros porttitor, a congue lacus venenatis. Aenean ac mi rutrum augue fermentum tempus eget
