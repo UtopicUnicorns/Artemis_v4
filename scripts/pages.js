@@ -15,7 +15,32 @@ function page(dec) {
 		content_grab.style.animation = '';
 	}, 2000);
 
-	let page1 = `<img src="./images/logo.svg" width="100%">`;
+	let page1 = `
+	<table class="eD" cellpadding="0" cellspacing="0" width="100%" height="100%" border="0">
+		<tr>
+			<td>
+				<div style="width: 100%; height: 100%; overflow: auto; text-align: left;">
+					<img src="./images/logo.svg" width="100%">
+				</div>
+			</td>
+			<td>
+				<div style="width: 100%; height: 100%; overflow: auto; text-align: left;">
+					<img src="./images/logo.svg" width="100%">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="width: 100%; height: 100%; overflow: auto; text-align: left;">
+					<img src="./images/logo.svg" width="100%">
+				</div>
+			</td>
+			<td>
+				<div id="git" style="width: 100%; height: 100%; overflow: auto; text-align: left;"></div>
+			</td>
+		</tr>
+	</table>
+	`;
 
 	let page2 = `<h1>Command list</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu elementum tellus. Aenean venenatis pretium ante. Donec porttitor augue metus, vel suscipit elit faucibus ac. Etiam condimentum felis id eros porttitor, a congue lacus venenatis. Aenean ac mi rutrum augue fermentum tempus eget
@@ -254,6 +279,7 @@ function page(dec) {
 
 			setTimeout(function () {
 				content_grab.innerHTML = page1;
+				call_git();
 			}, 1000);
 
 			break;

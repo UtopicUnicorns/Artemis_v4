@@ -94,22 +94,18 @@
 	z-index: 999;
 }
 
-table {
-	border: 0px;
-}
-
-th,
-td {
-	width: 25%;
-	border: 0px;
-}
-
 code {
 	color: white;
 	font-size: 14px;
 	font-family: monospace;
 	padding: 1%;
 	background-color: rgba(51, 51, 51, 0.8);
+}
+
+.eD tr td {
+	width: 25%;
+	text-align: center;
+	overflow: auto;
 }
 
 p {
