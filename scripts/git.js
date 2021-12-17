@@ -26,22 +26,25 @@ function call_git() {
 				} else var title = { name: '=!', comment: '=!' };
 
 				array.push(`
-					<h3>
-						<a href="${author.link}" target="_blank" class="pulse">${author.name}</a> @ ${time}
-					</h3>
-					<p style="background-image: url('${author.pic}'); background-repeat: no-repeat; background-position: center right; background-size: contain;">
-						Title: ${title.name}<br /> -- <br />
-						Comments: ${title.comment}
+					<div style="border-radius: 5px; background-image: linear-gradient(0deg, rgba(55, 55, 55, 0.5) 100%, rgba(255, 255, 255, 0) 50%, rgba(55, 55, 55, 0) 0%);">
+						<h3>
+							<a href="${author.link}" target="_blank" class="pulse">${author.name}</a> @ ${time}
+						</h3>
+						<hr />
+						<p class="pulse" style="background-image: url('${author.pic}'); background-repeat: no-repeat; background-position: center right; background-size: contain;">
+							Title: ${title.name}<br /> -- <br />
+							Comments: ${title.comment}
 
-						<br />
-						<br />
-						@<a href="${repo.url}" target="_blank" class="pulse">${repo.name}</a> / ${repo.head}
-					</p>
+							<br />
+							<br />
+							@<a href="${repo.url}" target="_blank" class="pulse">${repo.name}</a> / ${repo.head}
+						</p>
+					</div>
 					`);
 			}
 
 			let content_grab = document.getElementById('git');
 
-			content_grab.innerHTML = array.slice(0, 5).join('');
+			content_grab.innerHTML = array.slice(0, 5).join(' ');
 		});
 }
