@@ -7,25 +7,26 @@ function call_git() {
 			let array = [];
 
 			for (let i of data) {
-				let date = new Date(i.created_at);
-				let year = date.getFullYear();
-				let month = ('0' + (date.getMonth() + 1)).substr(-2);
-				let day = ('0' + date.getDate()).substr(-2);
-				let hour = ('0' + date.getHours()).substr(-2);
-				let minutes = ('0' + date.getMinutes()).substr(-2);
-				let seconds = ('0' + date.getSeconds()).substr(-2);
+				if (i.type == 'PushEvent') {
+					let date = new Date(i.created_at);
+					let year = date.getFullYear();
+					let month = ('0' + (date.getMonth() + 1)).substr(-2);
+					let day = ('0' + date.getDate()).substr(-2);
+					let hour = ('0' + date.getHours()).substr(-2);
+					let minutes = ('0' + date.getMinutes()).substr(-2);
+					let seconds = ('0' + date.getSeconds()).substr(-2);
 
-				let time = `${year}/${month}/${day} ${hour}:${minutes}:${seconds}`;
+					let time = `${year}/${month}/${day} ${hour}:${minutes}:${seconds}`;
 
-				let author = { name: i.actor.login, pic: i.actor.avatar_url, link: `https://github.com/${i.actor.login}` };
+					let author = { name: i.actor.login, pic: i.actor.avatar_url, link: `https://github.com/${i.actor.login}` };
 
-				let repo = { name: i.repo.name, url: i.repo.url.replace('api.', '').replace('/repos', ''), head: i.payload.ref };
+					let repo = { name: i.repo.name, url: i.repo.url.replace('api.', '').replace('/repos', ''), head: i.payload.ref };
 
-				if (i.payload.commits) {
-					var title = { name: i.payload.commits[0].message.split('\n\n')[0], comment: i.payload.commits[0].message.split('\n\n')[1] };
-				} else var title = { name: '=!', comment: '=!' };
+					if (i.payload.commits) {
+						var title = { name: i.payload.commits[0].message.split('\n\n')[0], comment: i.payload.commits[0].message.split('\n\n')[1] };
+					} else var title = { name: '=!', comment: '=!' };
 
-				array.push(`
+					array.push(`
 					<div style="border-radius: 5px; background-image: linear-gradient(0deg, rgba(55, 55, 55, 0.5) 100%, rgba(255, 255, 255, 0) 50%, rgba(55, 55, 55, 0) 0%);">
 						<h3>
 							<a href="${author.link}" target="_blank" class="pulse">${author.name}</a> @ ${time}
@@ -41,6 +42,7 @@ function call_git() {
 						</p>
 					</div>
 					`);
+				}
 			}
 
 			let content_grab = document.getElementById('git');
