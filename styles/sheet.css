@@ -510,16 +510,16 @@ h6:focus {
 @keyframes dissapear {
 	0% {
 		opacity: 1;
-		margin: 1%;
+		filter: blur(0px);
 	}
 	50% {
 		opacity: 0;
-		margin-bottom: 5000px;
+		filter: blur(8px);
 	}
 
 	100% {
 		opacity: 1;
-		margin: 1%;
+		filter: blur(0px);
 	}
 }
 

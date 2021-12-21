@@ -17,7 +17,7 @@ function page(dec) {
 
 	let page1 = `<div id="git" style="width: 100%; height: 100%; overflow: auto; text-align: left;"></div>`;
 
-	let page2 = `<h1>Command list</h1>
+	let page2 = `<h1>Features</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu elementum tellus. Aenean venenatis pretium ante. Donec porttitor augue metus, vel suscipit elit faucibus ac. Etiam condimentum felis id eros porttitor, a congue lacus venenatis. Aenean ac mi rutrum augue fermentum tempus eget
 	ac est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac ligula eu felis congue bibendum id eu odio. Fusce dignissim magna sit amet erat porta, at porta mauris elementum. In nec pellentesque nulla. Sed blandit mauris augue, et rhoncus turpis
 	suscipit vitae. Sed blandit ex id placerat porttitor. Cras sed ornare tortor. Etiam nec arcu a magna condimentum ultrices. Curabitur diam diam, auctor quis facilisis nec, sollicitudin sed lorem. Nullam vitae libero vel quam viverra tempus. Donec orci dolor, sollicitudin eget nulla non,
@@ -66,18 +66,12 @@ function page(dec) {
 	<br />`;
 
 	let page5 = `<h1>Donate</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu elementum tellus. Aenean venenatis pretium ante. Donec porttitor augue metus, vel suscipit elit faucibus ac. Etiam condimentum felis id eros porttitor, a congue lacus venenatis. Aenean ac mi rutrum augue fermentum tempus eget
-	ac est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac ligula eu felis congue bibendum id eu odio. Fusce dignissim magna sit amet erat porta, at porta mauris elementum. In nec pellentesque nulla. Sed blandit mauris augue, et rhoncus turpis
-	suscipit vitae. Sed blandit ex id placerat porttitor. Cras sed ornare tortor. Etiam nec arcu a magna condimentum ultrices. Curabitur diam diam, auctor quis facilisis nec, sollicitudin sed lorem. Nullam vitae libero vel quam viverra tempus. Donec orci dolor, sollicitudin eget nulla non,
-	malesuada laoreet enim. Etiam porttitor maximus lacinia. Fusce rhoncus commodo dictum. Integer condimentum lacinia neque vitae mattis. Quisque sapien neque, elementum ut augue id, fermentum sollicitudin mauris. Aenean mattis, velit feugiat ullamcorper tincidunt, mauris orci gravida neque, quis
-	gravida eros justo ac dolor. Vestibulum mattis ante vestibulum nulla ultricies sollicitudin. Cras ex massa, iaculis et dui eu, luctus molestie nulla. Maecenas eu tincidunt est. Nulla quis justo et quam condimentum hendrerit vel ut sem. Fusce auctor id nulla id eleifend. Morbi viverra quis orci
-	eu iaculis. Donec vitae dignissim massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In feugiat consequat lorem, nec hendrerit lorem iaculis vitae. Sed eget erat condimentum, sollicitudin dolor quis, placerat libero. Praesent accumsan, dui sed
-	condimentum tincidunt, arcu nisi blandit enim, ac luctus lectus mi sed orci. Mauris egestas egestas elit sit amet condimentum. Praesent vitae varius mi. Donec non leo posuere, dapibus sapien vel, scelerisque mauris. In finibus est sapien, eu porta est lobortis quis. Quisque viverra ultricies
-	purus, eu pretium tellus tristique in. Nunc varius urna sed odio fermentum feugiat ut ac nisl. Vivamus placerat purus sed dui tincidunt porta. Proin porta efficitur urna, et laoreet lorem euismod quis. Maecenas maximus at justo consequat dignissim. Sed porttitor mauris posuere augue laoreet, in
-	viverra sapien ornare. Suspendisse potenti. Curabitur venenatis imperdiet lacus, vitae rhoncus sem euismod et. Ut egestas nisi libero, vitae molestie enim pharetra ut. Sed condimentum, leo sed faucibus viverra, nibh eros fermentum libero, vitae ultrices metus lorem ut sapien. In finibus lectus
-	purus, eu hendrerit diam ultricies volutpat. Sed maximus, tellus non fringilla pretium, leo libero rutrum lorem, sit amet euismod sapien justo et eros. Ut accumsan vehicula lobortis. Sed sit amet urna magna. Nulla luctus dui ut nisl viverra suscipit. Nulla lobortis dolor vel lectus porttitor,
-	ac condimentum felis sodales. Praesent consequat consectetur magna, eget sollicitudin libero. Ut vitae orci in metus blandit aliquam. Mauris eget ipsum augue. Duis vitae justo interdum, ullamcorper mi in, sollicitudin sapien. Nulla interdum vulputate odio, pretium posuere arcu iaculis sed.
-	Aenean ornare nunc iaculis lacus condimentum pellentesque ac ut sem.</p>
+	Project Artemis is free to use, sadly VPS, server, domain and hosting costs are not free, please consider one of the below options to donate.<hr />
+	<ul><li>Paypal</li></ul>
+	<p><button class="pulse" onClick="javascript:window.open('https://www.paypal.com/donate/?hosted_button_id=ULQ8N32CLXK4L', '_blank');">Donate trough PayPal</button></p>
+
+	<ul><li>Patreon</li></ul>
+	<p><button class="pulse" onClick="javascript:window.open('https://www.patreon.com/initrd', '_blank');">Become a Patron</button></p>
 	<br />
 	<br />`;
 
@@ -259,7 +253,7 @@ function page(dec) {
 		case 2:
 			bg_grab.filter = `hue-rotate(40deg)`;
 
-			document.title = 'COMMAND LIST - Project Artemis';
+			document.title = 'FEATURES - Project Artemis';
 
 			setTimeout(function () {
 				content_grab.innerHTML = page2;
