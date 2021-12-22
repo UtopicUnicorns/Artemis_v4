@@ -32,7 +32,7 @@ function call_git() {
 							<a href="${author.link}" target="_blank" class="pulse">${author.name}</a> @ ${time}
 						</h3>
 						<hr />
-						<p class="pulse" style="background-image: url('${author.pic}'); background-repeat: no-repeat; background-position: center right; background-size: contain;">
+						<p class="pulse" style="background-image: url('./images/icons/icon_github.svg'); background-repeat: no-repeat; background-position: center right; background-size: contain;">
 							Title: ${title.name}<br /> -- <br />
 							Comments: ${title.comment}
 
