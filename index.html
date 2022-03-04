@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<!--Meta Data -->
 		<meta charset="utf-8" />
@@ -27,99 +28,72 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<!--Preloads-->
-		<link rel="prefetch" href="./images/1.png" />
-		<link rel="prefetch" href="./images/2.png" />
-		<link rel="prefetch" href="./images/3.png" />
-		<link rel="prefetch" href="./images/4.png" />
-		<link rel="prefetch" href="./images/5.png" />
+		<link rel="prefetch" href="./images/backgrounds/1.png" />
+		<link rel="prefetch" href="./images/backgrounds/2.png" />
+		<link rel="prefetch" href="./images/backgrounds/3.png" />
+		<link rel="prefetch" href="./images/backgrounds/4.png" />
+		<link rel="prefetch" href="./images/backgrounds/5.png" />
+		<link rel="prefetch" href="./images/backgrounds/prism.svg" />
+		<link rel="prefetch" href="./images/assets/wave_top.svg" />
+		<link rel="prefetch" href="./images/assets/wave_mid.svg" />
+		<link rel="prefetch" href="./images/assets/wave_bot.svg" />
+		<link rel="prefetch" href="./images/logo/logo.svg" />
 
 		<!--Title-->
-		<title>INDEX - Project Artemis (JavaScript Bot Skeletal Framework)</title>
+		<title>Project Artemis, Fuck you kindly.</title>
 
 		<!--Stylesheet-->
 		<link rel="stylesheet" href="./styles/sheet.css" />
 	</head>
 
-	<body onload="call_git();">
-		<!--Background-->
-		<div class="background" id="background">
+	<body>
+
+		<div class="bg_box waveAnimation">
+			<div class="i_box bgTop">
+				<div class="wave waveTop" style="background-image: url('./images/assets/wave_top.svg');"></div>
+			</div>
+			<div class="i_box bgMiddle">
+				<div class="wave waveMiddle" style="background-image: url('./images/assets/wave_mid.svg');"></div>
+			</div>
+			<div class="i_box bgBottom">
+				<div class="wave waveBottom" style="background-image: url('./images/assets/wave_bot.svg');"></div>
+			</div>
+		</div>
+
+
+
+		<div class="a_box" id="A">
 			<div class="logo">
-				<img src="./images/logo.svg" />
+				<img src="./images/logo/logo.svg">
+			</div>
+			<div class="menu_box">
+				<button class="menu_button pulse" onclick="location.href='#A'">HOMEPAGE</button>
+				<button class="menu_button pulse" onclick="location.href='#B'">INVITE</button>
+				<button class="menu_button pulse" onclick="location.href='#C'">GITHUB</button>
+				<button class="menu_button pulse" onclick="location.href='#D'">DONATE</button>
+				<button class="menu_button pulse" onclick="location.href='#E'">CONTACT</button>
 			</div>
 		</div>
 
-		<!--Content holder-->
-		<div class="content_box_holder">
-			<!--Box holder-->
-			<div class="content_box" id="content_box">
-				<!--Menu-->
-				<div class="menu_box">
-					<button class="home_button pulse" onclick="page(1);">
-						<div style="height: 100%; background-image: url('./images/icons/icon_home.svg'); background-repeat: no-repeat; background-position: center left; background-size: contain; margin: auto; text-align: right; justify-content: right; align-items: center; display: flex;">
-							Index
-						</div>
-					</button>
-					<br /><br />
-					<button class="home_button pulse" onclick="page(2)">
-						<div style="height: 100%; background-image: url('./images/icons/icon_commands.svg'); background-repeat: no-repeat; background-position: center left; background-size: contain; margin: auto; text-align: right; justify-content: right; align-items: center; display: flex;">
-							Features
-						</div>
-					</button>
-					<br /><br />
-					<button class="home_button pulse" onclick="page(4)">
-						<div style="height: 100%; background-image: url('./images/icons/icon_github.svg'); background-repeat: no-repeat; background-position: center left; background-size: contain; margin: auto; text-align: right; justify-content: right; align-items: center; display: flex;">
-							Github
-						</div>
-					</button>
-					<br /><br />
-					<button class="home_button pulse" onclick="page(5)">
-						<div style="height: 100%; background-image: url('./images/icons/icon_paypal.svg'); background-repeat: no-repeat; background-position: center left; background-size: contain; margin: auto; text-align: right; justify-content: right; align-items: center; display: flex;">
-							Donate
-						</div>
-					</button>
-					<br /><br />
-					<button class="home_button pulse" onclick="page(6)">
-						<div style="height: 100%; background-image: url('./images/icons/icon_discord.svg'); background-repeat: no-repeat; background-position: center left; background-size: contain; margin: auto; text-align: right; justify-content: right; align-items: center; display: flex;">
-							Invite Bot
-						</div>
-					</button>
-					<br /><br />
-					<button class="home_button pulse" onclick="page(7)">
-						<div style="height: 100%; background-image: url('./images/icons/icon_contact.svg'); background-repeat: no-repeat; background-position: center left; background-size: contain; margin: auto; text-align: right; justify-content: right; align-items: center; display: flex;">
-							Contact
-						</div>
-					</button>
-					<br /><br />
-				</div>
-
-				<!--Content-->
-				<div class="content pulse" id="content">
-					<div id="git" style="width: 100%; height: 100%; overflow: auto; text-align: left;">
-						If you can see this, then either Javascript is disabled or something went wrong.
-					</div>
-				</div>
-			</div>
+		<div class="b_box" id="B">
+			<a href="#C">HELLO</a>
 		</div>
 
-		<div class="footer">
-			<button class="footer_button pulse" onclick="page(8)">
-				Terms of Service
-			</button>
+		<div class="c_box" id="C">
+			<a href="#D">HELLO</a>
+		</div>
 
-			<button class="footer_button pulse" onclick="page(9)">
-				Privacy Policy
-			</button>
+		<div class="d_box" id="D">
+			<a href="#E">HELLO</a>
+		</div>
 
-			<div class="top">
-				<button onclick="topFunction()" class="top_button pulse" id="top">
-					Scroll to Top
-				</button>
-			</div>
+		<div class="e_box" id="E">
+			<a href="#A">HELLO</a>
 		</div>
 
 		<!--Scripts-->
 		<script src="./scripts/top.js"></script>
 		<script src="./scripts/git.js"></script>
-		<script src="./scripts/pages.js"></script>
 	</body>
+
 </html>
