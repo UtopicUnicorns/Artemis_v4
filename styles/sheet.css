@@ -92,6 +92,12 @@
 }
 
 /*CONTAINERS*/
+.inline {
+	display: inline-block;
+	width: 25%;
+	float: left;
+}
+
 .logo {
 	padding: 5%;
 	display: grid;
@@ -145,6 +151,7 @@
 	background-image: url('../images/backgrounds/1.png');
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .b_box {
@@ -158,6 +165,7 @@
 	background-image: url('../images/backgrounds/2.png');
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .c_box {
@@ -171,6 +179,7 @@
 	background-image: url('../images/backgrounds/3.png');
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .d_box {
@@ -184,6 +193,7 @@
 	background-image: url('../images/backgrounds/4.png');
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .e_box {
@@ -197,6 +207,7 @@
 	background-image: url('../images/backgrounds/5.png');
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
 }
 
 /*PULSE EFFECT*/
