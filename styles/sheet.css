@@ -210,6 +210,43 @@
 	overflow: hidden;
 }
 
+.f_box {
+	height: 100%;
+	width: 100%;
+	top: 500%;
+	left: 0px;
+	display: grid;
+	place-items: center;
+	position: absolute;
+	background-image: url('../images/backgrounds/1.png');
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.g_box {
+	height: 100%;
+	width: 100%;
+	top: 600%;
+	left: 0px;
+	display: grid;
+	place-items: center;
+	position: absolute;
+	background-image: url('../images/backgrounds/2.png');
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.extend_box {
+	height: 90%;
+	width: 90%;
+	border-redius: 25px;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow: auto;
+	padding: 5%;
+}
+
 /*PULSE EFFECT*/
 .pulse:hover,
 .pulse:focus {
